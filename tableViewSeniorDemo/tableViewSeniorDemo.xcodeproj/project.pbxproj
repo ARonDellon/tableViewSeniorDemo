@@ -17,6 +17,8 @@
 		823556851E655F32005636DC /* rightInAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823556841E655F32005636DC /* rightInAnimationVC.swift */; };
 		823556871E655F4C005636DC /* zoomCellAnimtaionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823556861E655F4C005636DC /* zoomCellAnimtaionVC.swift */; };
 		823556891E657206005636DC /* 212.png in Resources */ = {isa = PBXBuildFile; fileRef = 823556881E657206005636DC /* 212.png */; };
+		826C28BE1E667EB6007CB7E8 /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28BD1E667EB6007CB7E8 /* pageViewController.swift */; };
+		826C28C01E66D57E007CB7E8 /* pagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28BF1E66D57E007CB7E8 /* pagerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		823556841E655F32005636DC /* rightInAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rightInAnimationVC.swift; sourceTree = "<group>"; };
 		823556861E655F4C005636DC /* zoomCellAnimtaionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zoomCellAnimtaionVC.swift; sourceTree = "<group>"; };
 		823556881E657206005636DC /* 212.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 212.png; sourceTree = "<group>"; };
+		826C28BD1E667EB6007CB7E8 /* pageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
+		826C28BF1E66D57E007CB7E8 /* pagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pagerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				823556881E657206005636DC /* 212.png */,
+				826C28BC1E667EA0007CB7E8 /* pager */,
 				8235567D1E655ED3005636DC /* tableviewCell动画 */,
 				8235566B1E655C01005636DC /* AppDelegate.swift */,
 				8235566D1E655C01005636DC /* ViewController.swift */,
@@ -85,6 +90,15 @@
 				823556861E655F4C005636DC /* zoomCellAnimtaionVC.swift */,
 			);
 			name = "tableviewCell动画";
+			sourceTree = "<group>";
+		};
+		826C28BC1E667EA0007CB7E8 /* pager */ = {
+			isa = PBXGroup;
+			children = (
+				826C28BD1E667EB6007CB7E8 /* pageViewController.swift */,
+				826C28BF1E66D57E007CB7E8 /* pagerVC.swift */,
+			);
+			name = pager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826C28C01E66D57E007CB7E8 /* pagerVC.swift in Sources */,
 				823556871E655F4C005636DC /* zoomCellAnimtaionVC.swift in Sources */,
 				823556851E655F32005636DC /* rightInAnimationVC.swift in Sources */,
 				8235566E1E655C01005636DC /* ViewController.swift in Sources */,
+				826C28BE1E667EB6007CB7E8 /* pageViewController.swift in Sources */,
 				823556831E655F1C005636DC /* delayCellAnimationVC.swift in Sources */,
 				8235566C1E655C01005636DC /* AppDelegate.swift in Sources */,
 				8235567F1E655EFC005636DC /* horizontalTableViewVC.swift in Sources */,
@@ -330,6 +346,7 @@
 				8235567C1E655C01005636DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
