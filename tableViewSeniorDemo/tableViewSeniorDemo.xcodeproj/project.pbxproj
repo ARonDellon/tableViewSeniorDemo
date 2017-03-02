@@ -19,6 +19,8 @@
 		823556891E657206005636DC /* 212.png in Resources */ = {isa = PBXBuildFile; fileRef = 823556881E657206005636DC /* 212.png */; };
 		826C28BE1E667EB6007CB7E8 /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28BD1E667EB6007CB7E8 /* pageViewController.swift */; };
 		826C28C01E66D57E007CB7E8 /* pagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28BF1E66D57E007CB7E8 /* pagerVC.swift */; };
+		826C28C21E67ED4F007CB7E8 /* pageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28C11E67ED4F007CB7E8 /* pageTitleView.swift */; };
+		826C28C41E6800A5007CB7E8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826C28C31E6800A5007CB7E8 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		823556881E657206005636DC /* 212.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 212.png; sourceTree = "<group>"; };
 		826C28BD1E667EB6007CB7E8 /* pageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		826C28BF1E66D57E007CB7E8 /* pagerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pagerVC.swift; sourceTree = "<group>"; };
+		826C28C11E67ED4F007CB7E8 /* pageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pageTitleView.swift; sourceTree = "<group>"; };
+		826C28C31E6800A5007CB7E8 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				826C28BD1E667EB6007CB7E8 /* pageViewController.swift */,
+				826C28C11E67ED4F007CB7E8 /* pageTitleView.swift */,
 				826C28BF1E66D57E007CB7E8 /* pagerVC.swift */,
+				826C28C31E6800A5007CB7E8 /* String+Extension.swift */,
 			);
 			name = pager;
 			sourceTree = "<group>";
@@ -179,9 +185,11 @@
 				823556871E655F4C005636DC /* zoomCellAnimtaionVC.swift in Sources */,
 				823556851E655F32005636DC /* rightInAnimationVC.swift in Sources */,
 				8235566E1E655C01005636DC /* ViewController.swift in Sources */,
+				826C28C21E67ED4F007CB7E8 /* pageTitleView.swift in Sources */,
 				826C28BE1E667EB6007CB7E8 /* pageViewController.swift in Sources */,
 				823556831E655F1C005636DC /* delayCellAnimationVC.swift in Sources */,
 				8235566C1E655C01005636DC /* AppDelegate.swift in Sources */,
+				826C28C41E6800A5007CB7E8 /* String+Extension.swift in Sources */,
 				8235567F1E655EFC005636DC /* horizontalTableViewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

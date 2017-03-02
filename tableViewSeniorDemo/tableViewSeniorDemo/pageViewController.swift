@@ -48,18 +48,12 @@ class pageViewController: UIViewController {
         self.move(toIndex: 0, withAnimation: false)
     }
 
-    func add(childViewController: UIViewController, toIndex: Int) {
-        if toIndex > controllers.count-1 {
-            return
-        }
-        controllers.insert(childViewController, at: toIndex)
-        self.reloadSelf()
-    }
+
 
 }
 
 
-
+// MARK: - UI
 fileprivate extension pageViewController {
 
     func setupUI() {
@@ -84,21 +78,35 @@ extension pageViewController: UIScrollViewDelegate {
     }
 }
 
+// MARK: - 数据相关
 extension pageViewController {
 
+    func add(childViewController: UIViewController, toIndex: Int) {
+        if toIndex > controllers.count-1 {
+            return
+        }
+        controllers.insert(childViewController, at: toIndex)
+        self.reloadSelf()
+    }
 
     func setupControllers(viewControllers: [UIViewController]) {
         controllers = viewControllers
         self.reloadSelf()
     }
 
-    func move(toIndex: Int, withAnimation: Bool) {
-        scrollView?.setContentOffset(CGPoint.init(x: CGFloat(toIndex)*scrollView!.bounds.width, y: 0), animated: withAnimation)
-    }
+
 
 }
 
+// MARK: - 控制相关
+extension pageViewController {
+    func move(toIndex: Int, withAnimation: Bool) {
+        scrollView?.setContentOffset(CGPoint.init(x: CGFloat(toIndex)*scrollView!.bounds.width, y: 0), animated: withAnimation)
+    }
+}
 
+
+// MARK: - 代理
 @objc protocol pageVCDelegate {
     @objc optional func pageViewScrolling(offSet: CGFloat)
     @objc optional func pageViewEndScroll(atIndex: Int)
